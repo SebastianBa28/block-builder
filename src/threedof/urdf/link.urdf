@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<robot name="link">
+
+  <!-- ******************************************************** -->
+  <!-- ******************* Kinematic Chain ******************** -->
+  <!-- ******************************************************** -->
+  <!-- Note the 'origin' tag in the joints defines the shift and
+       reorientation, i.e. the transform.  For moving joints, this
+       happens before the continuous joint rotates around 'axis'. -->
+
+  <!-- World can't take a visual element (at least in Gazebo). -->
+  <link name="world"/>
+
+  <joint name="placement" type="fixed">
+    <parent link="world"/>
+    <child  link="link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- LINK: Try showing an STL file. --> 
+  <link name="link">
+    <visual>
+      <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/pointer.stl"
+	      scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="wood"/>
+    </visual>
+  </link>
+
+  
+  <!-- *************************************************** -->
+  <!-- *************** Visual Link Elements ************** -->
+  <!-- *************************************************** -->
+  <!-- Note collada .dae files are preferred over .stl as  -->
+  <!-- they specify and provide color/texture support.     -->
+
+  <!-- Colors -->
+  <material name="wood">  <color rgba="0.82 0.62 0.04 1"/>  </material>
+
+</robot>

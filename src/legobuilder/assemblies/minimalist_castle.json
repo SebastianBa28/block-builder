@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Minimalist Castle",
+    "description": "A simple castle with four towers and connecting walls.",
+    "gridSize": {
+      "length": 4,
+      "width": 4,
+      "height": 4
+    }
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 1,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 3,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 4,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 5,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 6,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 7,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 8,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 9,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 10,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 11,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 12,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 3
+      }
+    },
+    {
+      "id": 13,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 3
+      }
+    },
+    {
+      "id": 14,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 3
+      }
+    },
+    {
+      "id": 15,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Column with 3-block horizontal arm (exceeds cantilever limit of 2)",
+    "gridSize": { "length": 5, "width": 3, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green", "position": { "x": 0, "y": 1, "z": 1 } },
+    { "id": 2, "color": "green", "position": { "x": 0, "y": 1, "z": 2 } },
+    { "id": 3, "color": "blue",  "position": { "x": 1, "y": 1, "z": 2 } },
+    { "id": 4, "color": "blue",  "position": { "x": 2, "y": 1, "z": 2 } },
+    { "id": 5, "color": "red",   "position": { "x": 3, "y": 1, "z": 2 } }
+  ]
+}

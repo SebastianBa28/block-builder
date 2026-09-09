@@ -1,0 +1,366 @@
+<?xml version="1.0"?>
+
+<robot name="fivedof">
+
+  <!-- ******************************************************** -->
+  <!-- ******************* Kinematic Chain ******************** -->
+  <!-- ******************************************************** -->
+  <!-- Note the 'origin' tag in the joints defines the shift and
+       reorientation, i.e. the transform.  For moving joints, this
+       happens before the continuous joint rotates around 'axis'. -->
+
+  <!-- World can't take a visual element (at least in Gazebo). -->
+  <link name="world"/>
+
+  <!-- Middle of base plate in x, bottom in z-->
+  <joint name="placement" type="fixed">
+    <parent link="world"/>
+    <child  link="baseplate"/>
+    <origin xyz="0.7623 0 0" rpy="0 0 0"/>
+    <!-- <origin xyz="0 0 0.0253" rpy="0 0 0"/> -->
+  </joint>
+
+  <!-- BASE PLATE: Shift across the base plate to the base motor. --> 
+  <link name="baseplate">
+    <visual>
+      <origin xyz="0 0.1 0.0127" rpy="0 0 0"/> <!--Center of base plate-->
+      <geometry>
+	      <box size="0.2 0.2 0.0254"/>
+      </geometry>
+      <material name="wood"/>
+    </visual>
+  </link>
+
+  <!--From bottom of baseplate to middle of basemotor in y, bottom in z-->
+  <joint name="baseplate" type="fixed">
+    <parent link="baseplate"/>  <!--Bottom of baseplate-->
+    <child  link="basemotor"/>  <!--Bottom of basemotor-->
+    <origin xyz="0 0.1016 0.0254" rpy="0 0 0"/> <!--y: offset of center of motor from edge of base plate, z: baseplate thickness-->
+  </joint>
+
+  <!-- BASE MOTOR: Thickness: X5 = 31.1mm, X8 = 45.1mm -->
+  <link name="basemotor">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 1.5708"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X8.stl"
+	      scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+
+  <joint name="base" type="continuous">
+    <parent link="basemotor"/> <!--Bottom of basemotor-->
+    <child  link="lbracket"/> <!--Top of basemotor-->
+    <origin xyz="0 0 0.0451" rpy="0 0 0"/> <!--z: basemotor thickness-->
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <link name="lbracket">
+    <visual>
+      <origin xyz="0.04485 -0.04485 0.0" rpy="1.5708 0 3.1415"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/basebracket_5dof.stl"
+        scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="lbracket_shoulder" type="fixed">
+    <parent link="lbracket"/> <!--Middle of basemotor-->
+    <child  link="shouldermotor"/> <!--Front of shouldermotor where table edge is front-->
+    <origin xyz="-0.0373 0 0.12025" rpy="0 -1.5708 3.1415"/>	  <!-- L BRACKET DIMENIONS -->
+  </joint>
+
+  <!-- TODO: fix origin -->
+  <joint name="lbracket_gripper" type="fixed">
+    <parent link="lbracket"/>
+    <child  link="grippermotor"/>
+    <origin xyz="-0.05 0 0.05" rpy="3.1415 -1.5708 -3.1415"/>
+  </joint>
+
+  <!-- Gripper motor -->
+  <link name="grippermotor">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X5.stl"
+        scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+
+  <!-- SHOULDER MOTOR: Thickness: X5 = 31.1mm, X8 = 45.1mm -->
+  <link name="shouldermotor">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X8.stl"
+	      scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+  
+
+  <joint name="shoulder" type="continuous">
+    <parent link="shouldermotor"/> <!--Front of shouldermotor-->
+    <child  link="lowerarm"/> <!--Middle of shouldermotor cylinder-->
+    <origin xyz="0 0 0.0451" rpy="0 0 0"/>
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <link name="lowerarm">
+    <visual>
+      <origin xyz="-0.035 0.035 0" rpy="1.5708 0 0"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/lowerarm_5dof.stl"
+	      scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="alum"/>
+    </visual>
+  </link>
+
+  <joint name="lowerarm" type="fixed">
+    <parent link="lowerarm"/>
+    <child  link="elbowmotor"/>
+    <origin xyz="0.3556 0 0" rpy="3.1415 0 0"/>
+  </joint>
+
+  <!-- Elbow motor.  Thickness: X5 = 31.1mm, X8 = 45.1mm -->
+  <link name="elbowmotor">
+    <visual>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X5.stl"
+	      scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+
+  <joint name="elbow" type="continuous">
+    <parent link="elbowmotor"/>
+    <child  link="upperarm"/>
+    <origin xyz="0 0 0.0311" rpy="0 0 0"/>
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <link name="upperarm">
+    <visual>
+      <origin xyz="-0.035 0.035 0.0" rpy="1.5708 0.0 0.0"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/upperarm_5dof.stl"
+	      scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="alum"/>
+    </visual>
+  </link>
+
+  <joint name="upperarm" type="fixed">
+    <parent link="upperarm"/>
+    <child  link="wrist_tilt_motor"/>
+    <origin xyz="0.3048 0 0" rpy="3.1415 0 0"/>
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <link name="wrist_tilt_motor">
+    <visual>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X5.stl"
+        scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+
+  <joint name="wrist_tilt" type="continuous">
+    <parent link="wrist_tilt_motor"/>
+    <child  link="wrist_bracket"/>
+    <origin xyz="0 0 0.0438" rpy="0 0 0"/>
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <link name="wrist_bracket">
+    <visual>
+      <origin xyz="0.0654 -0.04 0.0" rpy="0 1.5708 1.5708"/>
+      <geometry>
+        <mesh filename="package://threedof/meshes/wrist_5dof.stl"
+        scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="wrist_bracket" type="fixed">
+    <parent link="wrist_bracket"/>
+    <child  link="wrist_roll_motor"/> 
+    <origin xyz="0.0654 0 -0.0572" rpy="0 1.5708 0"/>
+  </joint>
+
+  <link name="wrist_roll_motor">
+    <visual>
+      <geometry>
+        <mesh filename="package://threedof/meshes/X5.stl"
+        scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="hebi"/>
+    </visual>
+  </link>
+
+  <joint name="camera_mount" type="fixed">
+    <parent link="wrist_bracket"/>
+    <child  link="camera_mount"/>
+    <!--Above the roll motor. 
+    About 45 degrees from ground (45 deg from pointing up -> -0.78 rad). 
+    NOTE: x-axis must point in direction of camera
+    NOTE: although camera angled at 45, offset needed to correct error-->
+    <!-- <origin xyz="0.0654 0.07 -0.0572" rpy="0 0 -0.85"/> -->
+    <origin xyz="0.0654 0.07 -0.0572" rpy="0 0 -0.82"/>
+  </joint>
+
+  <!--From bottom of hinge to depth camera is ~0.08m-->
+  <link name="camera_mount">
+    <visual>
+      <origin xyz="0 0.04 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.080 0.025"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <!--Blue calibration dot on camera mount bracket, 0.105m along mount y-axis-->
+  <joint name="blue_mark_joint" type="fixed">
+    <parent link="camera_mount"/>
+    <child  link="blue_mark"/>
+    <origin xyz="0 0.105 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="blue_mark"></link>
+
+  <!--Camera is pushed a bit toward ground (0.025, camera width)-->
+  <joint name="camera_link" type="fixed">
+    <parent link="camera_mount"/>
+    <child  link="camera_link"/>
+    <origin xyz="0.025 0.08 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_link"></link>
+
+  <!--Optical frame: RealSense PointCloud2 data uses Z-forward, X-right, Y-down.
+      This rotation converts from link convention (X-forward) to optical convention.
+      Used by the camera FK chain (world → camera_optical_frame) in WorldMap integration.-->
+  <joint name="camera_optical_frame" type="fixed">
+    <parent link="camera_link"/>
+    <child  link="camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.5707963 0 -1.5707963"/>
+  </joint>
+
+  <link name="camera_optical_frame"></link>
+
+  <joint name="wrist_roll" type="continuous">
+    <parent link="wrist_roll_motor"/>
+    <child  link="gripper_base"/> 
+    <origin xyz="0 0 0.0311" rpy="0 0 0"/> 
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <!--Model gripper as 2 prismatic fingers that move diagonally-->
+  <link name="gripper_base">
+    <visual>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.02 0.02"/> 
+      </geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.02 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="gripper" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="finger_left"/>
+    <!--Max opening distance is approx 2 blocks (2 * 1.34in = 0.0682m) -> Each finger is 0.0682/2m + finger thickness (0.005m) = 0.0391 from center of gripper-->
+    <origin xyz="-0.0391 0 0.02" rpy="0 0 0"/> 
+    <!--Move diagonally in x and z (ratios computed by estimates in motion: x = 0.0341m, y ~= 0.035m); axis vector normalized-->
+    <axis   xyz="0.698 0 0.716"/> 
+    <!--sqrt(0.0341^2 + 0.035^2) = 0.0489-->
+    <limit lower="0.0" upper="0.0489" effort="10" velocity="0.5"/>
+  </joint>
+
+  <joint name="gripper_clone" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="finger_right"/>
+    <origin xyz="0.0391 0 0.02" rpy="0 0 0"/> 
+    <axis   xyz="0.698 0 -0.716"/> 
+    <limit lower="-0.0489" upper="0.0" effort="10" velocity="0.5"/>
+    <mimic joint="gripper" multiplier="-1" offset="0"/>
+  </joint>
+
+  <!--Total gripper length = 0.09m (when laying) and 0.1m (when gripper pointing down), and fingers start from base (0.02m in thickness)-->
+  <link name="finger_left">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/> 
+      </geometry>
+      <material name="alum"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="finger_right">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+      <material name="alum"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tip_slide" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="tip"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/> 
+    <axis   xyz="0 0 1"/> 
+    <mimic joint="gripper" multiplier="0.716" offset="0"/>
+    <limit lower="0.0" upper="0.035" effort="10" velocity="0.5"/>
+  </joint>
+
+  <link name="tip"/>
+
+  <!-- *************************************************** -->
+  <!-- *************** Visual Link Elements ************** -->
+  <!-- *************************************************** -->
+  <!-- Note collada .dae files are preferred over .stl as  -->
+  <!-- they specify and provide color/texture support.    -->
+
+  <!-- Colors -->
+  <material name="wood">  <color rgba="0.82 0.62 0.04 1"/>  </material>
+  <material name="hebi">  <color rgba="0.82 0.06 0.06 1"/>  </material>
+  <material name="alum">  <color rgba="0.5 0.5 0.5 1"/>  </material>
+  <material name="black">  <color rgba="0 0 0 1"/>  </material>
+  <material name="red">  <color rgba="1 0 0 1"/>  </material>
+  
+
+</robot>

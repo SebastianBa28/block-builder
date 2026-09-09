@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Bad Assembly (for testing verifier)",
+    "description": "Contains intentional violations: floating block, cantilever > 2, out-of-bounds, duplicate position, duplicate ID, invalid color",
+    "gridSize": { "length": 5, "width": 5, "height": 5 }
+  },
+
+  "blocks": [
+    { "id": 1, "color": "green", "position": { "x": 2, "y": 2, "z": 1 } },
+    { "id": 2, "color": "blue",  "position": { "x": 2, "y": 3, "z": 1 } },
+
+    { "id": 3, "color": "red",   "position": { "x": 2, "y": 2, "z": 1 } },
+
+    { "id": 4, "color": "yellow","position": { "x": 5, "y": 2, "z": 1 } },
+
+    { "id": 4, "color": "green", "position": { "x": 2, "y": 2, "z": 0 } },
+
+    { "id": 5, "color": "purple","position": { "x": 3, "y": 2, "z": 1 } },
+
+    { "id": 6, "color": "green", "position": { "x": 0, "y": 0, "z": 3 } },
+
+    { "id": 7, "color": "blue",  "position": { "x": 2, "y": 3, "z": 2 } },
+    { "id": 8, "color": "blue",  "position": { "x": 1, "y": 3, "z": 2 } },
+    { "id": 9, "color": "blue",  "position": { "x": 0, "y": 3, "z": 2 } },
+    { "id": 10,"color": "yellow","position": { "x": 0, "y": 4, "z": 2 } }
+  ]
+}

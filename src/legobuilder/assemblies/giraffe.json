@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Flat Giraffe Image Assembly",
+    "description": "A 6x6 flat image representation of a giraffe standing on green grass with a blue sky.",
+    "gridSize": {
+      "length": 6,
+      "width": 6,
+      "height": 1
+    }
+  },
+  "blocks": [
+    { "id": 0, "color": "green", "position": { "x": 1, "y": 1, "z": 1 } },
+    { "id": 1, "color": "green", "position": { "x": 2, "y": 1, "z": 1 } },
+    { "id": 2, "color": "green", "position": { "x": 3, "y": 1, "z": 1 } },
+    { "id": 3, "color": "green", "position": { "x": 4, "y": 1, "z": 1 } },
+    { "id": 4, "color": "green", "position": { "x": 5, "y": 1, "z": 1 } },
+    { "id": 5, "color": "green", "position": { "x": 6, "y": 1, "z": 1 } },
+    { "id": 6, "color": "green", "position": { "x": 1, "y": 2, "z": 1 } },
+    { "id": 7, "color": "green", "position": { "x": 2, "y": 2, "z": 1 } },
+    { "id": 8, "color": "green", "position": { "x": 3, "y": 2, "z": 1 } },
+    { "id": 9, "color": "green", "position": { "x": 4, "y": 2, "z": 1 } },
+    { "id": 10, "color": "green", "position": { "x": 5, "y": 2, "z": 1 } },
+    { "id": 11, "color": "green", "position": { "x": 6, "y": 2, "z": 1 } },
+
+    { "id": 12, "color": "yellow", "position": { "x": 2, "y": 3, "z": 1 } },
+    { "id": 13, "color": "yellow", "position": { "x": 2, "y": 4, "z": 1 } },
+    { "id": 14, "color": "yellow", "position": { "x": 4, "y": 3, "z": 1 } },
+    { "id": 15, "color": "yellow", "position": { "x": 4, "y": 4, "z": 1 } },
+    { "id": 16, "color": "yellow", "position": { "x": 3, "y": 5, "z": 1 } },
+    { "id": 17, "color": "yellow", "position": { "x": 3, "y": 6, "z": 1 } },
+    { "id": 18, "color": "yellow", "position": { "x": 2, "y": 6, "z": 1 } },
+
+    { "id": 19, "color": "blue", "position": { "x": 1, "y": 3, "z": 1 } },
+    { "id": 20, "color": "blue", "position": { "x": 3, "y": 3, "z": 1 } },
+    { "id": 21, "color": "blue", "position": { "x": 5, "y": 3, "z": 1 } },
+    { "id": 22, "color": "blue", "position": { "x": 6, "y": 3, "z": 1 } },
+    { "id": 23, "color": "blue", "position": { "x": 1, "y": 4, "z": 1 } },
+    { "id": 24, "color": "blue", "position": { "x": 3, "y": 4, "z": 1 } },
+    { "id": 25, "color": "blue", "position": { "x": 5, "y": 4, "z": 1 } },
+    { "id": 26, "color": "blue", "position": { "x": 6, "y": 4, "z": 1 } },
+    { "id": 27, "color": "blue", "position": { "x": 1, "y": 5, "z": 1 } },
+    { "id": 28, "color": "blue", "position": { "x": 2, "y": 5, "z": 1 } },
+    { "id": 29, "color": "blue", "position": { "x": 4, "y": 5, "z": 1 } },
+    { "id": 30, "color": "blue", "position": { "x": 5, "y": 5, "z": 1 } },
+    { "id": 31, "color": "blue", "position": { "x": 6, "y": 5, "z": 1 } },
+    { "id": 32, "color": "blue", "position": { "x": 1, "y": 6, "z": 1 } },
+    { "id": 33, "color": "blue", "position": { "x": 4, "y": 6, "z": 1 } },
+    { "id": 34, "color": "blue", "position": { "x": 5, "y": 6, "z": 1 } },
+    { "id": 35, "color": "blue", "position": { "x": 6, "y": 6, "z": 1 } }
+  ]
+}

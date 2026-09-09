@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Hollow 4x4x3 House",
+    "description": "A 4x4x3 house with hollow interior and random colored walls and roof.",
+    "gridSize": {
+      "length": 4,
+      "width": 4,
+      "height": 4
+    }
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 1,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 3,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 4,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 5,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 6,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 7,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 8,
+      "color": "green",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 9,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 10,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 11,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 12,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 2
+      }
+    },
+    {
+      "id": 13,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 2
+      }
+    },
+    {
+      "id": 14,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 2
+      }
+    },
+    {
+      "id": 15,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 2
+      }
+    },
+    {
+      "id": 16,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 17,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 18,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 19,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 20,
+      "color": "green",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 21,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 22,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 23,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 24,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": 25,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": 26,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": 27,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 3
+      }
+    },
+    {
+      "id": 28,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 3
+      }
+    },
+    {
+      "id": 29,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 3
+      }
+    },
+    {
+      "id": 30,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 3
+      }
+    },
+    {
+      "id": 31,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 3
+      }
+    },
+    {
+      "id": 32,
+      "color": "green",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 3
+      }
+    },
+    {
+      "id": 33,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 3
+      }
+    },
+    {
+      "id": 34,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 3
+      }
+    },
+    {
+      "id": 35,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 3
+      }
+    }
+  ]
+}

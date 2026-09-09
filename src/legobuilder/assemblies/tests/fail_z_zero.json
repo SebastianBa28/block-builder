@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Block at z=0 (below ground)",
+    "gridSize": { "length": 3, "width": 3, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green", "position": { "x": 1, "y": 1, "z": 0 } }
+  ]
+}

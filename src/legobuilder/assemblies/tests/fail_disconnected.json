@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Two separate blocks on ground (disconnected islands — warning only)",
+    "gridSize": { "length": 5, "width": 5, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green", "position": { "x": 0, "y": 0, "z": 1 } },
+    { "id": 2, "color": "red",   "position": { "x": 4, "y": 4, "z": 1 } }
+  ]
+}

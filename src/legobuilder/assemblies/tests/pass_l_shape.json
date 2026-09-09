@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "L-shape on ground",
+    "gridSize": { "length": 3, "width": 3, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "yellow", "position": { "x": 0, "y": 0, "z": 1 } },
+    { "id": 2, "color": "yellow", "position": { "x": 1, "y": 0, "z": 1 } },
+    { "id": 3, "color": "yellow", "position": { "x": 1, "y": 1, "z": 1 } }
+  ]
+}
