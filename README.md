@@ -14,9 +14,9 @@ The project progressed through ten milestones ("Goals 1–10") over the course o
 
 ## Demo
 
-<video src="https://github.com/SebastianBa28/block-builder/raw/main/media/demo.mp4" controls poster="media/poster.jpg" width="720">
-  Your browser doesn't support embedded video — <a href="media/demo.mp4">watch the demo here</a>.
-</video>
+[![Demo video](media/poster.jpg)](https://github.com/SebastianBa28/block-builder/raw/main/media/demo.mp4)
+
+*Click the thumbnail to watch the robot build.*
 
 ## Stack
 
