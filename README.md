@@ -12,6 +12,12 @@ The robot uses a 5-DOF arm (HEBI actuators) with an Intel RealSense depth camera
 
 The project progressed through ten milestones ("Goals 1–10") over the course of the term, from basic kinematics and object detection through full closed-loop assembly with placement verification, block-separation logic, and an end-of-class live demo.
 
+## Demo
+
+<video src="https://github.com/SebastianBa28/block-builder/raw/main/media/demo.mp4" controls poster="media/poster.jpg" width="720">
+  Your browser doesn't support embedded video — <a href="media/demo.mp4">watch the demo here</a>.
+</video>
+
 ## Stack
 
 ROS 2 · Python · HEBI Robotics SDK · OpenCV · PyTorch/Transformers (depth + perception) · Google ADK · FastAPI (live demo dashboard)
