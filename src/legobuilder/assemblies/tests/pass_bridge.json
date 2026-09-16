@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Bridge: two pillars with span built from both sides inward",
+    "gridSize": { "length": 6, "width": 3, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green",  "position": { "x": 0, "y": 1, "z": 1 } },
+    { "id": 2, "color": "green",  "position": { "x": 0, "y": 1, "z": 2 } },
+    { "id": 3, "color": "green",  "position": { "x": 5, "y": 1, "z": 1 } },
+    { "id": 4, "color": "green",  "position": { "x": 5, "y": 1, "z": 2 } },
+    { "id": 5, "color": "blue",   "position": { "x": 1, "y": 1, "z": 2 } },
+    { "id": 6, "color": "yellow", "position": { "x": 4, "y": 1, "z": 2 } },
+    { "id": 7, "color": "blue",   "position": { "x": 2, "y": 1, "z": 2 } },
+    { "id": 8, "color": "yellow", "position": { "x": 3, "y": 1, "z": 2 } }
+  ]
+}

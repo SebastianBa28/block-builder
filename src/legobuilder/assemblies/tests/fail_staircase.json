@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Cantilevered staircase (3 horizontal hops — exceeds cantilever limit)",
+    "description": "Same pattern as pass_staircase but with one more step",
+    "gridSize": { "length": 5, "width": 3, "height": 5 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green",  "position": { "x": 0, "y": 1, "z": 1 } },
+    { "id": 2, "color": "green",  "position": { "x": 0, "y": 1, "z": 2 } },
+    { "id": 3, "color": "blue",   "position": { "x": 1, "y": 1, "z": 2 } },
+    { "id": 4, "color": "blue",   "position": { "x": 1, "y": 1, "z": 3 } },
+    { "id": 5, "color": "yellow", "position": { "x": 2, "y": 1, "z": 3 } },
+    { "id": 6, "color": "yellow", "position": { "x": 2, "y": 1, "z": 4 } },
+    { "id": 7, "color": "red",    "position": { "x": 3, "y": 1, "z": 4 } }
+  ]
+}

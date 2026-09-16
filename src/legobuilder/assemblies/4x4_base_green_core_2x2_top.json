@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "4x4 Base (Green Core), 2x2 Top",
+    "description": "A two-layer structure with a 4x4 base (blue exterior, green interior) and a 2x2 yellow top layer.",
+    "gridSize": {
+      "length": 4,
+      "width": 4,
+      "height": 3
+    }
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 1,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 3,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 4,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 5,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 6,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 7,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 8,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 9,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 10,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 11,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 12,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 13,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 14,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 15,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 16,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 17,
+      "color": "yellow",
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 18,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 19,
+      "color": "yellow",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 2
+      }
+    }
+  ]
+}

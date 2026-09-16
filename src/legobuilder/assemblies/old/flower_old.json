@@ -1,0 +1,30 @@
+{
+  "metadata": { 
+    "version": "2.0", 
+    "title": "Flower Block Assembly Instructions", 
+    "description": "Instructions for block assembler robot to build 3D structures", 
+    "gridSize": { "length": 5, "width": 5, "height": 5 }
+  },
+  "blocks": [
+    { "id": 4, "color": "green", "position": { "x": 4, "y": 4, "z": 1 } },
+    { "id": 5, "color": "green", "position": { "x": 3, "y": 4, "z": 1 } },
+    { "id": 6, "color": "green", "position": { "x": 5, "y": 4, "z": 1 } },
+    { "id": 7, "color": "green", "position": { "x": 4, "y": 3, "z": 1 } },
+    { "id": 8, "color": "green", "position": { "x": 4, "y": 5, "z": 1 } },
+    { "id": 9, "color": "green", "position": { "x": 4, "y": 4, "z": 2 } },
+    { "id": 10, "color": "blue", "position": { "x": 3, "y": 4, "z": 2 } },
+    { "id": 11, "color": "blue", "position": { "x": 5, "y": 4, "z": 2 } },
+    { "id": 12, "color": "blue", "position": { "x": 4, "y": 3, "z": 2 } },
+    { "id": 13, "color": "blue", "position": { "x": 4, "y": 5, "z": 2 } },
+    { "id": 14, "color": "yellow", "position": { "x": 2, "y": 4, "z": 2 } },
+    { "id": 15, "color": "yellow", "position": { "x": 6, "y": 4, "z": 2 } },
+    { "id": 16, "color": "yellow", "position": { "x": 4, "y": 2, "z": 2 } },
+    { "id": 17, "color": "yellow", "position": { "x": 4, "y": 6, "z": 2 } },
+    { "id": 18, "color": "green", "position": { "x": 4, "y": 4, "z": 3 } },
+    { "id": 19, "color": "blue", "position": { "x": 3, "y": 4, "z": 3 } },
+    { "id": 20, "color": "blue", "position": { "x": 5, "y": 4, "z": 3 } },
+    { "id": 21, "color": "blue", "position": { "x": 4, "y": 3, "z": 3 } },
+    { "id": 22, "color": "blue", "position": { "x": 4, "y": 5, "z": 3 } },
+    { "id": 23, "color": "yellow", "position": { "x": 4, "y": 4, "z": 4 } }
+  ]
+}

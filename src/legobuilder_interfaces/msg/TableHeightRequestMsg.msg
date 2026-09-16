@@ -1,0 +1,1 @@
+# Brain -> Detector: Request the height of the table at as detected by the ee camera

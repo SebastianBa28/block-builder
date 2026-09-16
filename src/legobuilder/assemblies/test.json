@@ -1,0 +1,14 @@
+{
+  "metadata": { 
+    "version": "1.0", 
+    "title": "Flower Block Assembly Instructions", 
+    "description": "Instructions for block assembler robot to build 3D structures", 
+    "gridSize": { "length": 5, "width": 5, "height": 5 }
+  },
+  "blocks": [
+    { "id": 0, "color": "green", "position": { "x": 2, "y": 2, "z": 1 } },
+    { "id": 1, "color": "green", "position": { "x": 3, "y": 2, "z": 1 } },
+    { "id": 2, "color": "green", "position": { "x": 2, "y": 3, "z": 1 } },
+    { "id": 3, "color": "green", "position": { "x": 3, "y": 3, "z": 1 } }
+  ]
+}

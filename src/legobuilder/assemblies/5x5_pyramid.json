@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "5x5 Pyramid",
+    "description": "Pyramid with a 5x5 base, 3x3 second layer, and 1x1 top. Base corners and inside are blue, base boundary is yellow. Second layer is green, top is blue.",
+    "gridSize": {
+      "length": 5,
+      "width": 5,
+      "height": 4
+    }
+  },
+  "blocks": [
+    {
+      "id": 0,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 1,
+      "color": "blue",
+      "position": {
+        "x": 0,
+        "y": 4,
+        "z": 1
+      }
+    },
+    {
+      "id": 2,
+      "color": "blue",
+      "position": {
+        "x": 4,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 3,
+      "color": "blue",
+      "position": {
+        "x": 4,
+        "y": 4,
+        "z": 1
+      }
+    },
+    {
+      "id": 4,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 5,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 6,
+      "color": "yellow",
+      "position": {
+        "x": 0,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 7,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 8,
+      "color": "yellow",
+      "position": {
+        "x": 1,
+        "y": 4,
+        "z": 1
+      }
+    },
+    {
+      "id": 9,
+      "color": "yellow",
+      "position": {
+        "x": 2,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 10,
+      "color": "yellow",
+      "position": {
+        "x": 2,
+        "y": 4,
+        "z": 1
+      }
+    },
+    {
+      "id": 11,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 0,
+        "z": 1
+      }
+    },
+    {
+      "id": 12,
+      "color": "yellow",
+      "position": {
+        "x": 3,
+        "y": 4,
+        "z": 1
+      }
+    },
+    {
+      "id": 13,
+      "color": "yellow",
+      "position": {
+        "x": 4,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 14,
+      "color": "yellow",
+      "position": {
+        "x": 4,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 15,
+      "color": "yellow",
+      "position": {
+        "x": 4,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 16,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 17,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 18,
+      "color": "blue",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 19,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 20,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 21,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 22,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 1
+      }
+    },
+    {
+      "id": 23,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 1
+      }
+    },
+    {
+      "id": 24,
+      "color": "blue",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 1
+      }
+    },
+    {
+      "id": 25,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 26,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 27,
+      "color": "green",
+      "position": {
+        "x": 1,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 28,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 29,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 30,
+      "color": "green",
+      "position": {
+        "x": 2,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 31,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 1,
+        "z": 2
+      }
+    },
+    {
+      "id": 32,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 2,
+        "z": 2
+      }
+    },
+    {
+      "id": 33,
+      "color": "green",
+      "position": {
+        "x": 3,
+        "y": 3,
+        "z": 2
+      }
+    },
+    {
+      "id": 34,
+      "color": "blue",
+      "position": {
+        "x": 2,
+        "y": 2,
+        "z": 3
+      }
+    }
+  ]
+}

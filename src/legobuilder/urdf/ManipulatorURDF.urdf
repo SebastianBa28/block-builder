@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ManipulatorURDF">
+  <link
+    name="world">
+    <inertial>
+      <origin
+        xyz="-0.0319682146068769 -0.0712919173426376 0.312467508281584"
+        rpy="0 0 0" />
+      <mass
+        value="58.5714271162892" />
+      <inertia
+        ixx="2.80714259437599"
+        ixy="6.67907115817241E-17"
+        ixz="-1.79833686536418E-16"
+        iyy="14.131012223719"
+        iyz="3.31300179612308E-17"
+        izz="11.3488955216641" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/world.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/world.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="2.35922392732846E-16 0.00319307632941697 0.0231367204514605"
+        rpy="0 0 0" />
+      <mass
+        value="0.811276403984294" />
+      <inertia
+        ixx="0.00162695856646265"
+        ixy="1.63169995122577E-18"
+        ixz="1.99276506920238E-17"
+        iyy="0.00534974758681092"
+        iyz="-1.38565476043499E-05"
+        izz="0.00380945628422332" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base"
+    type="fixed">
+    <origin
+      xyz="-0.031968 -0.045772 -0.035892"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="world" />
+    <child
+      link="base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="basemotor">
+    <inertial>
+      <origin
+        xyz="0.0145809447249784 -0.0116242166620697 0.001096719387758"
+        rpy="0 0 0" />
+      <mass
+        value="0.479836749198315" />
+      <inertia
+        ixx="0.00018548951127537"
+        ixy="1.38218665412631E-05"
+        ixz="-5.14449630403242E-07"
+        iyy="0.000272932308755983"
+        iyz="-1.65338644817789E-07"
+        izz="0.000409979470999314" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/basemotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/basemotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="basemotor"
+    type="fixed">
+    <origin
+      xyz="-0.01 0.0384 0.002"
+      rpy="1.5708 -1.5708 0" />
+    <parent
+      link="base" />
+    <child
+      link="basemotor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lbracket">
+    <inertial>
+      <origin
+        xyz="0.0293772438618847 0.0441823987359258 6.74432192732111E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.26206014808221" />
+      <inertia
+        ixx="0.000808699573467781"
+        ixy="-0.000164736669622157"
+        ixz="1.6402933683226E-10"
+        iyy="0.000329679862710256"
+        iyz="7.432493333527E-11"
+        izz="0.0007679582349184" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/lbracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/lbracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lbracket"
+    type="continuous">
+    <origin
+      xyz="0 -0.01 -0.03205"
+      rpy="-1.5708 0 1.6617" />
+    <parent
+      link="basemotor" />
+    <child
+      link="lbracket" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="shouldermotor">
+    <inertial>
+      <origin
+        xyz="0.0145809442254963 0.00162421567540418 0.00327586116376387"
+        rpy="0 0 0" />
+      <mass
+        value="0.479836752565452" />
+      <inertia
+        ixx="0.000185489512678032"
+        ixy="-1.38218642189787E-05"
+        ixz="5.14448397068435E-07"
+        iyy="0.000272932311620917"
+        iyz="-1.65338425704689E-07"
+        izz="0.000409979475540909" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/shouldermotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/shouldermotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shouldermotor"
+    type="fixed">
+    <origin
+      xyz="0.018673 0.11025 0"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="lbracket" />
+    <child
+      link="shouldermotor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lowerarm">
+    <inertial>
+      <origin
+        xyz="0.178151810905459 0.0295975801200006 -1.02001740387436E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.282854121695911" />
+      <inertia
+        ixx="0.0001411630378748"
+        ixy="3.08658805979467E-18"
+        ixz="1.00728419930188E-05"
+        iyy="0.00545980436181351"
+        iyz="-1.0842021724855E-19"
+        izz="0.00532054222149239" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/lowerarm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/lowerarm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lowerarm"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 2.1002" />
+    <parent
+      link="shouldermotor" />
+    <child
+      link="lowerarm" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="elbowmotor">
+    <inertial>
+      <origin
+        xyz="0.0150126700023258 0.0017748641187135 -0.00999604204007097"
+        rpy="0 0 0" />
+      <mass
+        value="1.27972762204197" />
+      <inertia
+        ixx="0.000453936848041229"
+        ixy="-3.67251900218835E-05"
+        ixz="-4.12794817605936E-07"
+        iyy="0.000677577287417087"
+        iyz="-5.90640166145667E-07"
+        izz="0.001073069445127" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/elbowmotor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/elbowmotor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbowmotor"
+    type="fixed">
+    <origin
+      xyz="0.3556 0.0014226 0"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="lowerarm" />
+    <child
+      link="elbowmotor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="upperarm">
+    <inertial>
+      <origin
+        xyz="0.152720482125047 0.00922500000000062 -5.08482145278322E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.257143162839373" />
+      <inertia
+        ixx="0.000125415839143433"
+        ixy="-2.32112438536096E-17"
+        ixz="8.41802450706444E-06"
+        iyy="0.0038469960900376"
+        iyz="8.06375365786094E-19"
+        izz="0.00372330836009143" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/upperarm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/upperarm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upperarm"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 -2.4371" />
+    <parent
+      link="elbowmotor" />
+    <child
+      link="upperarm" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wrist_tilt_motor">
+    <inertial>
+      <origin
+        xyz="0.0132245457508793 0.0116136949160882 3.95781229663161E-06"
+        rpy="0 0 0" />
+      <mass
+        value="1.27972733513137" />
+      <inertia
+        ixx="0.000453936621019601"
+        ixy="-3.67252191236766E-05"
+        ixz="-4.12801269208155E-07"
+        iyy="0.000677577016500754"
+        iyz="-5.90656781362931E-07"
+        izz="0.00107306895372492" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_tilt_motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_tilt_motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_tilt_motor"
+    type="fixed">
+    <origin
+      xyz="0.30301 -0.00895 0.0098388"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="upperarm" />
+    <child
+      link="wrist_tilt_motor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_bracket">
+    <inertial>
+      <origin
+        xyz="-0.00583671430859124 -0.0454116481386222 0.00299438385480333"
+        rpy="0 0 0" />
+      <mass
+        value="0.163048010176994" />
+      <inertia
+        ixx="0.000255841425040599"
+        ixy="6.77650907049038E-05"
+        ixz="-1.2771026416368E-05"
+        iyy="0.000186781691486247"
+        iyz="1.61465999379102E-05"
+        izz="0.000238826785566649" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_bracket.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_bracket.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_bracket"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="0.022506 1.5708 -2.9393" />
+    <parent
+      link="wrist_tilt_motor" />
+    <child
+      link="wrist_bracket" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="wrist_roll_motor">
+    <inertial>
+      <origin
+        xyz="0.604414904977033 -0.0413276111901876 0.211362603023674"
+        rpy="0 0 0" />
+      <mass
+        value="1.27972712989146" />
+      <inertia
+        ixx="0.000669103206211055"
+        ixy="-5.63456858486957E-05"
+        ixz="-2.48543974720419E-06"
+        iyy="0.000462424227195364"
+        iyz="-3.6050645858508E-07"
+        izz="0.00107305435259486" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_roll_motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ManipulatorURDF/meshes/wrist_roll_motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_roll_motor"
+    type="fixed">
+    <origin
+      xyz="-0.0083 -0.29893 -0.60843"
+      rpy="-1.5193 -1.4797 -0.051296" />
+    <parent
+      link="wrist_bracket" />
+    <child
+      link="wrist_roll_motor" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+
+   <joint name="camera_mount" type="fixed">
+    <parent link="wrist_bracket"/>
+    <child  link="camera_mount"/>
+    <!--Above the roll motor. 
+    About 43 degrees from ground (55 deg from pointing up -> -0.96 rad). 
+    Note: x-axis must point in direction of camera-->
+    <origin xyz="0.0654 0.07 -0.0572" rpy="0 0 -0.96"/>
+  </joint>
+
+  <!--From bottom of hinge to depth camera is ~0.07m-->
+  <link name="camera_mount">
+    <visual>
+      <origin xyz="0 0.035 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.070 0.025"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <!--Camera is pushed a bit toward ground (0.025, camera width)-->
+  <joint name="camera_link" type="fixed">
+    <parent link="camera_mount"/>
+    <child  link="camera_link"/>
+    <origin xyz="0.025 0.07 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="camera_link"></link>
+
+  <!--Optical frame: RealSense PointCloud2 data uses Z-forward, X-right, Y-down.
+      This rotation converts from link convention (X-forward) to optical convention.
+      Used by the camera FK chain (world → camera_optical_frame) in WorldMap integration.-->
+  <joint name="camera_optical_frame" type="fixed">
+    <parent link="camera_link"/>
+    <child  link="camera_optical_frame"/>
+    <origin xyz="0 0 0" rpy="-1.5707963 0 -1.5707963"/>
+  </joint>
+
+  <link name="camera_optical_frame"></link>
+
+  <joint name="wrist_roll" type="continuous">
+    <parent link="wrist_roll_motor"/>
+    <child  link="gripper_base"/> 
+    <origin xyz="0 0 0.0311" rpy="0 0 0"/> 
+    <axis   xyz="0 0 1"/>
+  </joint>
+
+  <!--Model gripper as 2 prismatic fingers that move diagonally-->
+  <link name="gripper_base">
+    <visual>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.02 0.02"/> 
+      </geometry>
+      <material name="wood"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.01" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.02 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="gripper" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="finger_left"/>
+    <!--Max opening distance is approx 2 blocks (2 * 1.34in = 0.0682m) -> Each finger is 0.0682/2m + finger thickness (0.005m) = 0.0391 from center of gripper-->
+    <origin xyz="-0.0391 0 0.02" rpy="0 0 0"/> 
+    <!--Move diagonally in x and z (ratios computed by estimates in motion: x = 0.0341m, y ~= 0.035m); axis vector normalized-->
+    <axis   xyz="0.698 0 0.716"/> 
+    <!--sqrt(0.0341^2 + 0.035^2) = 0.0489-->
+    <limit lower="0.0" upper="0.0489" effort="10" velocity="0.5"/>
+  </joint>
+
+  <joint name="gripper_clone" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="finger_right"/>
+    <origin xyz="0.0391 0 0.02" rpy="0 0 0"/> 
+    <axis   xyz="0.698 0 -0.716"/> 
+    <limit lower="-0.0489" upper="0.0" effort="10" velocity="0.5"/>
+    <mimic joint="gripper" multiplier="-1" offset="0"/>
+  </joint>
+
+  <!--Total gripper length = 0.09m (when laying) and 0.1m (when gripper pointing down), and fingers start from base (0.02m in thickness)-->
+  <link name="finger_left">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/> 
+      </geometry>
+      <material name="alum"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="finger_right">
+    <visual>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+      <material name="alum"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.04" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.01 0.0178 0.08"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="tip_slide" type="prismatic">
+    <parent link="gripper_base"/>
+    <child  link="tip"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/> 
+    <axis   xyz="0 0 1"/> 
+    <mimic joint="gripper" multiplier="0.716" offset="0"/>
+    <limit lower="0.0" upper="0.035" effort="10" velocity="0.5"/>
+  </joint>
+
+  <link name="tip"/>
+
+  <!-- *************************************************** -->
+  <!-- *************** Visual Link Elements ************** -->
+  <!-- *************************************************** -->
+  <!-- Note collada .dae files are preferred over .stl as  -->
+  <!-- they specify and provide color/texture support.    -->
+
+  <!-- Colors -->
+  <material name="wood">  <color rgba="0.82 0.62 0.04 1"/>  </material>
+  <material name="hebi">  <color rgba="0.82 0.06 0.06 1"/>  </material>
+  <material name="alum">  <color rgba="0.5 0.5 0.5 1"/>  </material>
+  <material name="black">  <color rgba="0 0 0 1"/>  </material>
+  <material name="red">  <color rgba="1 0 0 1"/>  </material>
+  
+</robot>

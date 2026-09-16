@@ -1,0 +1,11 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Valid structure but wrong build order (top block listed first)",
+    "gridSize": { "length": 3, "width": 3, "height": 3 }
+  },
+  "blocks": [
+    { "id": 1, "color": "blue",  "position": { "x": 1, "y": 1, "z": 2 } },
+    { "id": 2, "color": "green", "position": { "x": 1, "y": 1, "z": 1 } }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "title": "Vertical tower of 3 blocks",
+    "gridSize": { "length": 3, "width": 3, "height": 4 }
+  },
+  "blocks": [
+    { "id": 1, "color": "green", "position": { "x": 1, "y": 1, "z": 1 } },
+    { "id": 2, "color": "blue",  "position": { "x": 1, "y": 1, "z": 2 } },
+    { "id": 3, "color": "red",   "position": { "x": 1, "y": 1, "z": 3 } }
+  ]
+}
